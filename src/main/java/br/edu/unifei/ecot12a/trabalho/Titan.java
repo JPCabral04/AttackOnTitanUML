@@ -1,14 +1,14 @@
 package br.edu.unifei.ecot12a.trabalho;
 
 public abstract class Titan {
-    private float height;
+    private float size;
 
-    public float getHeight() {
-        return height;
+    public float getSize() {
+        return size;
     }
 
-    public void setHeight(float height) {
-        this.height = height;
+    public void setSize(float size) {
+        this.size = size;
     }
-
 }
+
