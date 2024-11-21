@@ -19,6 +19,5 @@ public class Shifter extends Human{
     public void setRationals(List<Rational> rationals) {
         this.rationals = rationals;
     }
-
     
 }
