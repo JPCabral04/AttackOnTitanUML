@@ -1,28 +1,26 @@
 package br.edu.unifei.ecot12a.trabalho;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class Garrison extends Soldier{
-    private int wallDefenseSkill;
-    private List<Wall> protectWalls = new ArrayList<Wall>();
+    private String wallDefenseSkill;
+    private Wall protectWall;
 
     protected Garrison(){}
 
-    public int getWallDefenseSkill() {
+    public String getWallDefenseSkill() {
         return wallDefenseSkill;
     }
 
-    public void setWallDefenseSkill(int wallDefenseSkill) {
+    public void setWallDefenseSkill(String wallDefenseSkill) {
         this.wallDefenseSkill = wallDefenseSkill;
     }
 
-    public List<Wall> getProtectWalls() {
-        return protectWalls;
+    public Wall getProtectWalls() {
+        return protectWall;
     }
 
-    public void setProtectWalls(List<Wall> protectWalls) {
-        this.protectWalls = protectWalls;
+    public void setProtectWall(Wall protectWall) {
+        this.protectWall = protectWall;
     };
 
 }

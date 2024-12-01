@@ -6,11 +6,7 @@ public abstract class Wall {
     private float width;
     private boolean isDestroyed;
 
-    private WallState wallState;
-
-    public Wall(WallState wallState){
-        this.wallState = wallState;
-    }
+    private WallState wallState = new Safe();
 
     public String getName() {
         return name;
@@ -36,18 +32,17 @@ public abstract class Wall {
     public void setDestroyed(boolean isDestroyed) {
         this.isDestroyed = isDestroyed;
     }
-
-
-
     public WallState getWallState() {
         return wallState;
     }
-
-
-
     public void setWallState(WallState wallState) {
         this.wallState = wallState;
     }
+
+    public void changeStage() {
+        wallState.state(this);
+    }
+    
 
     
 }

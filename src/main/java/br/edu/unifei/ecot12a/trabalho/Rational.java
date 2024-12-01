@@ -9,7 +9,7 @@ public class Rational extends Titan {
     
 
     public void specialHability() {
-        System.out.println(name + " is using its special hability!");
+        System.out.println(name + " special hability!");
     }
 
 
